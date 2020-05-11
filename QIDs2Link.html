@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<header style="text-align: center;">
+  <h1>Convert QIDs to LMS Link</h1>
+</header>
+<body style="background-color: #E7E3E3;text-align: center;">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+  
+
+  <div class="QIDs">
+  <textarea id="textArea" placeholder="Copy Your QIDs Here" rows = "20" cols = "40"></textarea>
+  <textarea id="Comma" placeholder="Comma separated Qids" rows= "20" cols="40" readonly></textarea>
+  <textarea id="result" placeholder="You will get LMS link here" rows="20" cols="40" readonly></textarea>
+  <textarea id="duplicate" placeholder="You will get duplicate QIDs here" rows="20" cols="40" readonly></textarea>
+  
+  <br>
+  <br>
+  <center>
+    <div class="tooltip">
+    <button class="button" onClick="window.location.reload();">Clear
+      <span class="tooltiptext">Clear Page</span>
+    </button></div>
+  <div class="tooltip">
+  <button class="button" onclick="getCommaSeparatedLink()">Convert
+<span class="tooltiptext">Convert Qids into Link</span>
+  </button>
+</div>
+<div class="tooltip">
+<button class="button" onclick="copyQids()">Copy Qids
+<span class="tooltiptext">Copy Comma separated Qids</span>
+</button>  
+</div>
+<div class="tooltip">
+  <button class="button" onclick="copy()">Copy Link
+<span class="tooltiptext">Copy LMS Link</span></button></div>
+<div class="tooltip">
+  <button class="button" onclick="openLink()">Open Link
+<span class="tooltiptext">Open Link in New tab</span></button></div>
+<div class="tooltip">
+<button class="button" id="Count">0
+<span class="tooltiptext">Unique QIDs</span>
+</button>
+</div>
+<div class="tooltip">
+<button class="button" id="duplicateqid">0
+<span class="tooltiptext">Duplicate QIDs</span>
+</button>
+</div>
+
+
+</center>
+<button class="button1" onclick="myFunction()">Details</button>
+
+
+</div>
+</body>
+</html>
